@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Format: mysql+pymysql://user:password@host/db_name
-SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL", "mysql+pymysql://root:B1900%4037512o@localhost/neu")
+SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL", "mysql+pymysql://root:NHẬP_PASS_VÀO_ĐÂY@localhost/NHẬP_TÊN_DB_VÀO_ĐÂY")
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
